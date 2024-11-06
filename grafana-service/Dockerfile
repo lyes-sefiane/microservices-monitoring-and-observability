@@ -1,5 +1,5 @@
 FROM grafana/grafana
-LABEL maintainer="Lyes S."
+LABEL maintainer="Lyes Sefiane"
 ADD provisioning /etc/grafana/provisioning
 ADD grafana.ini /etc/grafana
 USER root

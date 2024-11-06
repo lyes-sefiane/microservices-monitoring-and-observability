@@ -1,6 +1,6 @@
-## License
+# Microservices Monitoring and Observability
 
-[Creative Commons Attribution-NonCommercial-NoDerivs 4.0 International License][cc-by-nc-nd].
+### © 2024 | Lyes Sefiane <img src="https://raw.githubusercontent.com/wiki/lyes-sefiane/grocery-items-management-application/images/algeria-flag-icon.png" width="2%"> <img src="https://raw.githubusercontent.com/wiki/lyes-sefiane/grocery-items-management-application/images/canada-flag-icon.png" width="2%"> All Rights Reserved | [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/)
 
 [![CC BY-NC-ND 4.0][cc-by-nc-nd-image]][cc-by-nc-nd]
 
@@ -10,95 +10,56 @@
 
 # GitHub Badges
 
+![License](https://img.shields.io/static/v1?label=License&message=CC-BY-NC-ND-4.0&color=green)
+[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](code_of_conduct.md)
+[![Automatic Dependency Submission](https://github.com/lyes-sefiane/microservices-monitoring-and-observability/actions/workflows/dependency-graph/auto-submission/badge.svg)](https://github.com/lyes-sefiane/microservices-monitoring-and-observability/actions/workflows/dependency-graph/auto-submission)
+[![CodeQL](https://github.com/lyes-sefiane/microservices-monitoring-and-observability/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/lyes-sefiane/microservices-monitoring-and-observability/actions/workflows/github-code-scanning/codeql)
+[![Dependabot Updates](https://github.com/lyes-sefiane/microservices-monitoring-and-observability/actions/workflows/dependabot/dependabot-updates/badge.svg)](https://github.com/lyes-sefiane/microservices-monitoring-and-observability/actions/workflows/dependabot/dependabot-updates)
 ![GitHub Repo stars](https://img.shields.io/github/stars/lyes-sefiane/network-device-inventory?style=social)
 ![GitHub top language](https://img.shields.io/github/languages/top/lyes-sefiane/network-device-inventory)
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/lyes-sefiane/network-device-inventory)
-![GitHub Release Date](https://img.shields.io/github/release-date/lyes-sefiane/network-device-inventory)
-![GitHub commit activity (branch)](https://img.shields.io/github/commit-activity/y/lyes-sefiane/network-device-inventory/master)
+
+# Documentation
+
+* [Microservices Monitoring and Observability Documentation](https://github.com/lyes-sefiane/microservices-monitoring-and-observability/wiki)
 
 
-# Network Device Microservices
-
-### Wiki
-
-* [lyes-sefiane/network-device-microservices/wiki](https://github.com/lyes-sefiane/network-device-inventory/wiki)
-
-## Network Device Inventory Service
-
-### Wiki
-
-* [lyes-sefiane/network-device-inventory-service](https://github.com/lyes-sefiane/network-device-inventory/tree/master/network-device-inventory-service)
-
-### OpenAPI/Swagger
-
-* [lyes-sefiane/swaggerhub.com/apis-docs/lyes-sefiane/network-device_inventory/1.0](https://app.swaggerhub.com/apis-docs/lyes-sefiane/network-device_inventory/1.0)
-
-### Docker Compose
-
-* Regarding the network device inventory service local dev/test, please replace "expose" by "port" in the manifest so that the endpoints will be reachable outside the docker.  
-
-```
-cd docker-compose/
-
-docker-compose -f service-registry.yml -f network-device-inventory.yml -f --env-file .env  up -d
-```
-
-![Image](https://raw.githubusercontent.com/wiki/lyes-sefiane/network-device-inventory/images/inventory-restful-web-service-v3.PNG)
-
-## Monitoring
-
-### Wiki
-
-* [lyes-sefiane/network-device-inventory/monitoring](https://github.com/lyes-sefiane/network-device-inventory/wiki/Monitoring)
-
-### Docker Compose
-
-```
-cd docker-compose/
-
-docker-compose -f service-registry.yml -f network-device-inventory.yml -f monitoring.yml -f gateway.yml --env-file .env  up -d
-```
+# Infrastructure
 
 ![Image](https://raw.githubusercontent.com/wiki/lyes-sefiane/network-device-inventory/images/monitoring-system-design-v2.PNG)
 
-## Snyk: 'So Now You Know'
+# Grafana / Prometheus
 
-### Wiki
+## Spring Boot applications metrics. (Micrometer/Prometheus)
 
-* [lyes-sefiane/network-device-inventory/Snyk-Securing-Code-Dependencies-Containers-and-Infrastructure-as-Code](https://github.com/lyes-sefiane/network-device-inventory/wiki/Snyk-Securing-Code,-Dependencies,-Containers-and-Infrastructure-as-Code)
+![Image](https://raw.githubusercontent.com/wiki/lyes-s/network-device-inventory/images/jvm-memory.PNG)
+
+## Postgres exporter metrics. (Postgres-exporter/Prometheus)
+
+![Image](https://raw.githubusercontent.com/wiki/lyes-s/network-device-inventory/images/general-settings.PNG)
+
+# Snyk: 'So Now You Know'
 
 ![Image](https://raw.githubusercontent.com/wiki/lyes-sefiane/network-device-inventory/images/CircleCiBuild.PNG)
 
 
-## SonarCloud: Code Quality and Code Security
-
-### Wiki
-
-* [lyes-sefiane/network-device-inventory/SonarCloud-Code-Quality-and-Code-Security](https://github.com/lyes-sefiane/network-device-inventory/wiki/SonarCloud-Code-Quality-and-Code-Security)
+# SonarCloud: Code Quality and Code Security
 
 ![Image](https://raw.githubusercontent.com/wiki/lyes-sefiane/network-device-inventory/images/sonarcloud-v3.PNG)
 
 
-## CircleCI: Continuous Integration and Delivery
-
-### Wiki
-
-* [lyes-sefiane/network-device-inventory/CircleCI-Continuous-Integration-and-Delivery](https://github.com/lyes-sefiane/network-device-inventory/wiki/CircleCI-Continuous-Integration-and-Delivery)
+# CircleCI: Continuous Integration and Delivery
 
 ![Image](https://raw.githubusercontent.com/wiki/lyes-sefiane/network-device-inventory/images/release-workflow-v7.PNG)
 
+
 # Requirements
+
 ```
-1. Java 11.x.y
+1. Java 17.x.y
 
 2. Maven 3.x.y
 
 3. Docker 3.x.y
-```
-
-# Git Clone
-```
-https://github.com/lyes-sefiane/network-device-inventory.git
 ```
 
 # Completed Features
