@@ -1,5 +1,5 @@
 FROM amazoncorretto:11-alpine
-LABEL maintainer="Lyes S."
+LABEL maintainer="Lyes Sefiane"
 RUN addgroup -S network-device-inventory-service && \
     adduser -S -G network-device-inventory-service network-device-inventory-service
 WORKDIR network-device-inventory-service

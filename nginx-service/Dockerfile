@@ -1,5 +1,5 @@
 FROM nginx:1.23-alpine
-LABEL maintainer="Lyes S."
+LABEL maintainer="Lyes Sefiane"
 RUN addgroup -S nginx-service && \
     adduser -S -G nginx-service nginx-service
 ADD conf.d /etc/nginx/conf.d

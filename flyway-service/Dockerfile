@@ -1,5 +1,5 @@
 FROM flyway/flyway:8.5.11-alpine
-LABEL maintainer="Lyes S."
+LABEL maintainer="Lyes Sefiane"
 ADD sql_versions /flyway/sqlf
 USER root
 RUN apk upgrade --update-cache --available && \
