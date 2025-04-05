@@ -3,9 +3,7 @@ package com.lyess.network_device_inventory_service.dto.entities;
 import com.lyess.network_device_inventory_service.utils.Defines;
 import lombok.*;
 
-import javax.validation.constraints.Digits;
-import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.Pattern;
+import jakarta.validation.constraints.*;
 
 /**
  * @author : Lyes Sefiane

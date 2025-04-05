@@ -2,8 +2,8 @@ package com.lyess.network_device_inventory_service.domain.enums.converter;
 
 import com.lyess.network_device_inventory_service.domain.enums.ElementType;
 
-import javax.persistence.AttributeConverter;
-import javax.persistence.Converter;
+import jakarta.persistence.AttributeConverter;
+import jakarta.persistence.Converter;
 
 /**
  * @author : Lyes Sefiane
