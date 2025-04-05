@@ -2,8 +2,8 @@ package com.lyess.network_device_inventory_service.domain.entites;
 
 import lombok.*;
 
-import javax.persistence.Column;
-import javax.persistence.Embeddable;
+import jakarta.persistence.Column;
+import jakarta.persistence.Embeddable;
 import java.io.Serializable;
 
 /**

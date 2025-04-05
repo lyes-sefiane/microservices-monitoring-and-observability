@@ -2,10 +2,7 @@ package com.lyess.network_device_inventory_service.domain.entites;
 
 import lombok.*;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import jakarta.persistence.*;
 
 /**
  * @author : Lyes Sefiane
