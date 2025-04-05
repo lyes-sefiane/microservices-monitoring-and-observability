@@ -2,8 +2,8 @@ package com.lyess.network_device_inventory_service.domain.enums.validator;
 
 import com.lyess.network_device_inventory_service.domain.enums.ElementType;
 
-import javax.validation.ConstraintValidator;
-import javax.validation.ConstraintValidatorContext;
+import jakarta.validation.ConstraintValidator;
+import jakarta.validation.ConstraintValidatorContext;
 
 /**
  * @author : Lyes Sefiane

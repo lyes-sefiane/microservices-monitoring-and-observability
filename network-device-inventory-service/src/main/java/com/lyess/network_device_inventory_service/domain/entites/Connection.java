@@ -2,7 +2,7 @@ package com.lyess.network_device_inventory_service.domain.entites;
 
 import lombok.*;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 import java.io.Serializable;
 
 /**

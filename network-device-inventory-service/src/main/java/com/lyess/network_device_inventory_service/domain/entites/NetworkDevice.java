@@ -4,7 +4,7 @@ import com.lyess.network_device_inventory_service.domain.enums.ElementType;
 import com.lyess.network_device_inventory_service.domain.enums.converter.ElementTypeConverter;
 import lombok.*;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 import java.io.Serializable;
 import java.util.HashSet;
 import java.util.Set;
