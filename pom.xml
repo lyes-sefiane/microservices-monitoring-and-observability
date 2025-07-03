@@ -9,11 +9,39 @@
 	<name>network-device-inventory</name>
 	<description>Network Device Inventory Microservice</description>
 	<packaging>pom</packaging>
+
+	<licenses>
+		<license>
+			<name>CC BY-NC-ND 4.0</name>
+			<url>https://creativecommons.org/licenses/by-nc-nd/4.0/</url>
+			<comments>Attribution-NonCommercial-NoDerivatives 4.0 International</comments>
+		</license>
+	</licenses>
+
+	<developers>
+		<developer>
+			<name>Lyes SEFIANE</name>
+			<email>lyes.sefiane@gmail.com</email>
+			<url>https://github.com/lyes-sefiane</url>
+			<roles>
+				<role>Software Engineering Manager</role>
+			</roles>
+		</developer>
+	</developers>
+
+	<scm>
+		<connection>scm:git:https://github.com/lyes-sefiane/microservices-monitoring-and-observability.git</connection>
+		<developerConnection>scm:git:https://github.com/lyes-sefiane/microservices-monitoring-and-observability.git</developerConnection>
+		<url>https://github.com/lyes-sefiane/microservices-monitoring-and-observability</url>
+	</scm>
+
 	<properties>
 		<java.version>17</java.version>
 	</properties>
+
 	<modules>
 		<module>network-device-inventory-service</module>
 		<module>jacoco-coverage-report-service</module>
 	</modules>
+
 </project>
